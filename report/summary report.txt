@@ -1,0 +1,8 @@
+i have completed performance test on frequently used api for test app.
+test executed for the below mentioned scenario in server https://iotait.tech/
+ 
+4 concurrent request with 1 loop count; avg tps for totall samples is ~ 3.20 and totall concurrent api requested:188
+5 concurrent request with 1 loop count; avg tps for totall samples is ~ 3.80 and totall concurrent api requested:235
+
+while executed 5 concurrent request found 11 request got connection timeout and error rate 4.68%
+summary: server can handle almost  concurrent 200 api call with almost Zero error rate. 
